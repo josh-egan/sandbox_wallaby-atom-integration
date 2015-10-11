@@ -1,3 +1,5 @@
+var babel = require('babel');
+
 module.exports = function (wallaby) {
   return {
     files: [
@@ -9,6 +11,11 @@ module.exports = function (wallaby) {
     ],
     env: {
       type: 'node'
+    },
+    compilers: {
+      '**/*.js': wallaby.compilers.babel({
+        babel: babel
+      })
     }
   }
 }
