@@ -21,13 +21,18 @@
   },
   "homepage": "https://github.com/josh-egan/sandbox_wallaby-atom-integration#readme",
   "devDependencies": {
+    "babel-runtime": "^5.8.25",
     "chai": "^3.3.0",
     "istanbul": "^0.3.20",
     "mocha": "^2.3.3",
     "mocha-minimalist-reporter": "^1.1.0",
-    "mocha-teamcity-reporter": "0.0.4"
+    "mocha-teamcity-reporter": "0.0.4",
+    "sinon": "^1.17.1",
+    "sinon-as-promised": "^4.0.0"
   },
   "dependencies": {
-    "babel": "^5.8.23"
+    "axios": "^0.7.0",
+    "babel": "^5.8.23",
+    "lodash": "^3.10.1"
   }
 }
