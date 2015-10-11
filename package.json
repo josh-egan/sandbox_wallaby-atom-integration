@@ -1,0 +1,30 @@
+{
+  "name": "sandbox_wallaby-atom-integration",
+  "version": "1.0.0",
+  "description": "A sandbox for experimenting with the wallaby continuous test runner for atom.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "test-watch": "npm test -- --watch",
+    "test-teamcity": "npm test -- --reporter mocha-teamcity-reporter",
+    "test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josh-egan/sandbox_wallaby-atom-integration.git"
+  },
+  "private": true,
+  "author": "Joshua Egan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josh-egan/sandbox_wallaby-atom-integration/issues"
+  },
+  "homepage": "https://github.com/josh-egan/sandbox_wallaby-atom-integration#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "istanbul": "^0.3.20",
+    "mocha": "^2.3.3",
+    "mocha-minimalist-reporter": "^1.1.0",
+    "mocha-teamcity-reporter": "0.0.4"
+  }
+}
