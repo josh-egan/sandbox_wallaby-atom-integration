@@ -24,6 +24,7 @@ describe('strings', function() {
     it('should return false if pattern is longer than str', function() {
       expect(strings.startsWith('abc', 'abcd')).to.be.false
     })
+    
     const validStartsWithCases = [
       {str: 'abc', pattern: 'a'},
       {str: 'abc', pattern: 'ab'},
@@ -34,6 +35,5 @@ describe('strings', function() {
         expect(strings.startsWith(test.str, test.pattern)).to.be.true
       })
     })
-
   })
 })
