@@ -6,7 +6,6 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha",
     "test-watch": "npm test -- --watch",
-    "test-teamcity": "npm test -- --reporter mocha-teamcity-reporter",
     "test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha"
   },
   "repository": {
