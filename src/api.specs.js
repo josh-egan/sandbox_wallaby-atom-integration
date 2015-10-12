@@ -1,11 +1,7 @@
-import chai from 'chai'
-import sinon from 'sinon'
-import 'sinon-as-promised'
+import '../test/specs-helper'
 import axios from 'axios'
 
 import Api from './api'
-
-const expect = chai.expect
 
 describe('api', function() {
 

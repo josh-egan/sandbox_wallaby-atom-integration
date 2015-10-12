@@ -1,7 +1,6 @@
-import chai from 'chai'
-import strings from './strings'
+import '../test/specs-helper'
 
-const expect = chai.expect
+import strings from './strings'
 
 describe('strings', function() {
   describe('#startsWith', function() {
@@ -24,7 +23,7 @@ describe('strings', function() {
     it('should return false if pattern is longer than str', function() {
       expect(strings.startsWith('abc', 'abcd')).to.be.false
     })
-    
+
     const validStartsWithCases = [
       {str: 'abc', pattern: 'a'},
       {str: 'abc', pattern: 'ab'},
